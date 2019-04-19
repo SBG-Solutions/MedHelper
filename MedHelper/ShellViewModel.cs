@@ -36,7 +36,7 @@ namespace MedHelper
         /// </summary>
         /// <param name="name">Object containing username variable from wpf</param>
         /// <returns></returns>
-        public bool CanSayHello(string name)
+        public static bool CanSayHello(string name)
         {
             return !string.IsNullOrWhiteSpace(name);
         }
@@ -55,9 +55,9 @@ namespace MedHelper
         /// </summary>
         /// <param name="name">Object containing username variable from wpf</param>
         /// <todo>Find better demo to pass back into wpf</todo>
-        public void SayHello(string name)
+        public static void SayHello(string name)
         {
-            MessageBox.Show(string.Format("Hello {0}!", name)); //Don't do this in real life :)
+            _ = MessageBox.Show(string.Format("Hello {0}!", name)); //Don't do this in real life :)
         }
     }
 }
