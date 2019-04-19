@@ -11,7 +11,8 @@
         /// </summary>
         public App()
         {
-            InitializeComponent();
+            using (Sentry.SentrySdk.Init("https://0873f71d79894dd39c466e91196bd63d@sentry.io/1442762"))
+                InitializeComponent();
         }
     }
 }
