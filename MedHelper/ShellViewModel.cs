@@ -57,7 +57,7 @@ namespace MedHelper
         /// <todo>Find better demo to pass back into wpf</todo>
         public static void SayHello(string name)
         {
-            _ = MessageBox.Show(string.Format("Hello {0}!", name)); //Don't do this in real life :)
+            _ = MessageBox.Show(messageBoxText: $"Hello {name}!"); //Don't do this in real life :)
         }
     }
 }
