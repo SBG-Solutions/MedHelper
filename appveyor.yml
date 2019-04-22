@@ -5,6 +5,5 @@ platform: Any CPU
 clone_folder: c:\Source
 build:
   project: MedHelper.sln
-  publish_wap_xcopy: true
   parallel: true
   verbosity: normal
