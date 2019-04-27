@@ -1,7 +1,7 @@
 # escape=`
 # Use the latest Windows Server Core image with .NET Framework 4.7.1.
 image:
-  name: mcr.microsoft.com/dotnet/framework/sdk:latest
+  name: mcr.microsoft.com/dotnet/framework/sdk:4.8
   entrypoint: ['C:\BuildTools\Common7\Tools\VsDevCmd.bat &&']
 
 build:
